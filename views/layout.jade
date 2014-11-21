@@ -2,6 +2,9 @@ doctype html
 html
   head
     title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
-  body
+    script(type='text/javascript', src='/vendor/angular.js')
+    script(type='text/javascript', src='/js/app.js')
+  body(ng-app="Flipkart")
     block content

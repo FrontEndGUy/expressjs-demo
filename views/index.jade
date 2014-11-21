@@ -1,5 +1,11 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1= "Laptops"
+  
+  div(data-ng-controller='LaptopsController')
+    
+    ul.list-group
+      li(data-ng-repeat='laptop in laptops')
+        span {{laptop.title}}
+        img(data-ng-src='{{laptop.src}}')
